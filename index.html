@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" href="main.css">
+		<script src="https://kit.fontawesome.com/b67cc424e2.js" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+		<span class="switch-left" onclick="turnPrev();"><i class="fas fa-chevron-left"></i></span>
+		<span class="switch-right" onclick="turnNext();"><i class="fas fa-chevron-right"></i></span>
+
+		<div id="nav" class="nav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<span onClick="page(1);">Pagrindinis puslapis</span>
+			<span onClick="page(2);">Multimedijos paslaugų teikėjas</span>
+			<span onClick="page(3);">Programinės įrangos testuotojas</span>
+			<span onClick="page(4);">PHP programuotojas</span>
+			<span onClick="page(5);">JAVA programuotojas</span>
+			<span onClick="page(6);">NET programuotojas</span>
+			<span onClick="page(7);">JavaScript programuotojas</span>
+			<span onClick="page(8);">Mobiliosios elektronikos taisytojas</span>
+			<span onClick="page(9);">Kompiuterių tinklų derintojas</span>
+			<span onClick="page(10);">Apskaitininkas</span>
+			<span onClick="page(11);">Finansų paslaugų teikėjas</span>
+			<span onClick="page(12);">Kontaktai</span>
+		</div>
+
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+		<div id="flipbook">
+			<div style="background-image: url(images/first.png);">
+				<a href="http://kitm.lt/javascript-programuotojas/" class="abutn" target="_blank"><button class="butn1"></button></a>
+				<a href="http://kitm.lt/java-programuotojas/" class="abutn" target="_blank"><button class="butn2"></button></a>
+				<a href="http://kitm.lt/net-programuotojas/" class="abutn" target="_blank"><button class="butn3"></button></a>
+				<a href="http://kitm.lt/php-programuotojas/" class="abutn" target="_blank"><button class="butn4"></button></a>
+				<a href="http://kitm.lt/programines-irangos-testuotojas/" class="abutn" target="_blank"><button class="butn5"></button></a>
+				<a href="http://kitm.lt/multimedijos-paslaugu-teikejas/" class="abutn" target="_blank"><button class="butn6"></button></a>
+				<a href="http://kitm.lt/mobiliosios-elektronikos-taisytojas/" class="abutn" target="_blank"><button class="butn7"></button></a>
+				<a href="http://kitm.lt/kompiuteriu-tinklu-derintojas/" class="abutn" target="_blank"><button class="butn8"></button></a>
+				<a href="http://kitm.lt/bankiniu-operaciju-tvarkytojo/" class="abutn" target="_blank"><button class="butn9"></button></a>
+				<a href="http://kitm.lt/apskaitininkas-ir-kasininkas/" class="abutn" target="_blank"><button class="butn10"></button></a>
+			</div>
+			<div style="background-image: url(images/1.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/2.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/3.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/4.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/5.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/6.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/7.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/8.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/9.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/10.png);">
+				<button class=""></button>
+			</div>
+			<div style="background-image: url(images/last.png);"></div>
+		</div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+		<script type="text/javascript" src="turn.min.js"></script>
+		<script>
+			$('#flipbook').height(880);
+			$('#flipbook').width(1400);
+			$('#flipbook').turn({gradients: true, acceleration: true});
+
+			function openNav(){
+  				document.getElementById("nav").style.width = "250px";
+			}
+
+			function closeNav(){
+			document.getElementById("nav").style.width = "0";
+			} 
+
+			function page(x){
+				$('#flipbook').turn("page", x);
+			}
+
+			function turnPrev(){
+				$("#flipbook").turn("previous");
+			}
+
+			function turnNext(){
+				$("#flipbook").turn("next");
+			}
+		</script>
+
+	</body>
+
+</html>

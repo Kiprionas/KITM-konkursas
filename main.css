@@ -1,0 +1,192 @@
+body {
+    overflow: hidden;
+    background-color: rgba(   94, 115, 167   );
+}
+
+#flipbook {
+    margin: -1.3% auto;
+    width: 1400px;
+    height: 880px;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+#flipbook .turn-page {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.nav {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+  
+  
+.nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+  
+.nav a:hover {
+    color: #f1f1f1;
+}
+  
+
+.nav span {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav span:hover {
+    color: #f1f1f1;
+    cursor: pointer
+}
+  
+.nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.switch-left {
+    position: relative;
+    top: 475px;
+    left: 30px;
+    font-size: 30px;
+}
+
+.switch-right {
+    position: relative;
+    top: 475px;
+    left: 1830px;
+    font-size: 30px;
+}
+
+.switch-left:hover{
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.switch-right:hover{
+    color: #f1f1f1;
+    cursor: pointer;
+}
+   
+.butn1{
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 63px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn2{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 83px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn3{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 77px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn4{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 83px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn5{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 76px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn6{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 68px;
+    margin-left: 63px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn7{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 68px;
+    margin-left: 83px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn8{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 68px;
+    margin-left: 80px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn9{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 68px;
+    margin-left: 80px;
+    width: 47px;
+    height: 47px;
+}
+
+.butn10{ 
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 68px;
+    margin-left: 78px;
+    width: 47px;
+    height: 47px;
+}
+
+.abutn{
+    cursor: default;
+}
+
+.abutn button{
+    cursor: pointer;
+    background: transparent;
+    border: none !important;
+}
